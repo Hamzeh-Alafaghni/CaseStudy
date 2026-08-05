@@ -132,7 +132,7 @@ why did you use Builder pattern not Singleton Pattern for example?
 The Builder Pattern provides a clean, step-by-step way to assemble these distinct objects while keeping them readable and immutable. In contrast, the Singleton Pattern is designed strictly to restrict a class to a single global instance across the entire application (such as a database connection manager), which does not fit our need for creating varied, independent objects."
 -------------------------------------------
 Why this prompt was used?
-to understanding the builder pattern, when to use and how to use it
+to understanding the builder pattern, when to use and how to use it, and did help write README.md file
 
 How the AI response helped the project?
 it did help to get basic understanding of the Builder Design Pattern and fix some code errors and did help write README.md file
