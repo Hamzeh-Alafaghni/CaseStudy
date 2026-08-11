@@ -1,30 +1,20 @@
-public class SplitACBuilder implements ACBuilder{
+public class SplitACBuilder implements ACBuilder {
     private final AC ac = new AC("SPLIT AC");
 
     @Override
-    public void buildCapacity() {
-        ac.setCapacity("2.0 Ton - suitable for large rooms");
-    }
+    public void buildCapacity() { ac.setCapacity("2.0 Ton - suitable for large rooms"); }
 
     @Override
-    public void buildCompressorType() {
-        ac.setCompressorType("Dual Inverter Compressor (Energy Saving)");
-    }
+    public void buildCompressorType() { ac.setCompressorType("Dual Inverter Compressor (Energy Sav"); }
 
     @Override
-    public void buildRefrigerant() {
-        ac.setRefrigerant("R32 Eco-friendly Gas");
-    }
+    public void buildRefrigerant() { ac.setRefrigerant("R32 Eco-friendly Gas"); }
 
     @Override
-    public void buildFilterType() {
-        ac.setFilterType("Anti-Bacterial and PM 2.5 Filter");
-    }
+    public void buildFilterType() { ac.setFilterType("Anti-Bacterial and PM 2.5 Filter"); }
 
     @Override
-    public void buildDisplayType() {
-        ac.setDisplayType("Hidden LED Display on indoor unit");
-    }
+    public void buildDisplayType() { ac.setDisplayType("Hidden LED Display on indoor unit"); }
 
     @Override
     public void buildSmartFeatures() {
@@ -32,7 +22,5 @@ public class SplitACBuilder implements ACBuilder{
     }
 
     @Override
-    public AC getAC() {
-        return ac;
-    }
+    public AC getAC() { return ac; }
 }
