@@ -1,0 +1,65 @@
+┌─────────────────────────────────────────────────────┐
+│                <<abstract>>                          │
+│                 MedicalUnit                          │
+│                  Component                           │
+├─────────────────────────────────────────────────────┤
+│                                                     │
+├─────────────────────────────────────────────────────┤
+│ + getUnitName() : String                            │
+│ + setStartDescription(description : String) : void  │
+│ + setEndDescription(description : String) : void    │
+│ + setSpecialty(specialty : String) : void           │
+│ + addUnit(unit : MedicalUnit) : void                │
+│ + removeUnit(unit : MedicalUnit) : void              │
+│ + getChildUnits() : List<MedicalUnit>                │
+│ + printDetails() : void                              │
+└─────────────────────────▲───────────────────────────┘
+                          │
+              ┌───────────┴───────────┐
+              │                       │
+              │                       │
+              │                       │
+┌─────────────┴────────────────┐   ┌──┴─────────────────────────┐
+│          Department          │   │        StaffMember          │
+│       <<Composite>>          │   │           <<Leaf>>           │
+├──────────────────────────────┤   ├─────────────────────────────┤
+│ - unitName : String          │   │ - unitName : String         │
+│ - startDescription : String  │   │ - startDescription : String │
+│ - endDescription : String    │   │ - endDescription : String   │
+│ - childrenUnits :            │   │ - specialty : String        │
+│   List<MedicalUnit>          │   │                             │
+├──────────────────────────────┤   ├─────────────────────────────┤
+│ + Department(unitName:String)│   │ + StaffMember(unitName:String)
+│ + getUnitName() : String     │   │ + getUnitName() : String    │
+│ + setStartDescription()      │   │ + setStartDescription()     │
+│   : void                     │   │   : void                    │
+│ + setEndDescription() : void │   │ + setEndDescription() : void│
+│ + addUnit() : void           │   │ + setSpecialty() : void    │
+│ + removeUnit() : void        │   │ + printDetails() : void    │
+│ + getChildUnits() :          │   │                             │
+│   List<MedicalUnit>          │   │                             │
+│ + printDetails() : void      │   │                             │
+└──────────────────────────────┘   └─────────────────────────────┘
+              │
+              │
+              │ contains
+              │ 0..*
+              ▼
+      ┌─────────────────┐
+      │  MedicalUnit    │
+      └─────────────────┘
+
+
+                    ┌──────────────────────────┐
+                    │           Main           │
+                    │         <<Client>>       │
+                    ├──────────────────────────┤
+                    │ + main(args:String[])    │
+                    │   : void                 │
+                    └────────────┬─────────────┘
+                                 │
+                                 │ uses
+                                 ▼
+                         ┌───────────────┐
+                         │ MedicalUnit   │
+                         └───────────────┘
