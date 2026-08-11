@@ -1,0 +1,99 @@
+┌──────────────────────────────────────────────┐
+│                     AC                       │
+│                  <<Product>>                 │
+├──────────────────────────────────────────────┤
+│ - capacity : String                          │
+│ - compressorType : String                    │
+│ - refrigerant : String                       │
+│ - filterType : String                        │
+│ - displayType : String                       │
+│ - smartFeatures : String                     │
+│ - acType : String                            │
+├──────────────────────────────────────────────┤
+│ + AC(acType : String)                        │
+│ + getCapacity() : String                     │
+│ + setCapacity(capacity : String) : void      │
+│ + getCompressorType() : String               │
+│ + setCompressorType(compressorType : String) │
+│   : void                                      │
+│ + getRefrigerant() : String                  │
+│ + setRefrigerant(refrigerant : String) : void│
+│ + getFilterType() : String                   │
+│ + setFilterType(filterType : String) : void  │
+│ + getDisplayType() : String                  │
+│ + setDisplayType(displayType : String) : void│
+│ + getSmartFeatures() : String                │
+│ + setSmartFeatures(smartFeatures : String)   │
+│   : void                                      │
+│ + toString() : String                         │
+└──────────────────────────────────────────────┘
+                       ▲
+                       │ creates / contains
+                       │
+        ┌──────────────┴──────────────┐
+        │                             │
+┌───────────────────────┐   ┌────────────────────────┐
+│   SplitACBuilder      │   │   WindowACBuilder      │
+│   <<ConcreteBuilder>> │   │   <<ConcreteBuilder>>  │
+├───────────────────────┤   ├────────────────────────┤
+│ - ac : AC             │   │ - ac : AC              │
+├───────────────────────┤   ├────────────────────────┤
+│ + SplitACBuilder()    │   │ + WindowACBuilder()    │
+│ + buildCapacity()     │   │ + buildCapacity()      │
+│ + buildCompressorType │   │ + buildCompressorType()│
+│ + buildRefrigerant()  │   │ + buildRefrigerant()   │
+│ + buildFilterType()   │   │ + buildFilterType()    │
+│ + buildDisplayType()  │   │ + buildDisplayType()   │
+│ + buildSmartFeatures()│   │ + buildSmartFeatures() │
+│ + getAC() : AC        │   │ + getAC() : AC         │
+└───────────┬───────────┘   └────────────┬───────────┘
+            │                            │
+            │ implements                │ implements
+            │                            │
+            └──────────────┬─────────────┘
+                           │
+                           △
+                           │
+                ┌───────────────────────┐
+                │      <<interface>>    │
+                │       ACBuilder       │
+                ├───────────────────────┤
+                │ + buildCapacity()     │
+                │   : void              │
+                │ + buildCompressorType()│
+                │   : void              │
+                │ + buildRefrigerant()  │
+                │   : void              │
+                │ + buildFilterType()   │
+                │   : void              │
+                │ + buildDisplayType()  │
+                │   : void              │
+                │ + buildSmartFeatures()│
+                │   : void              │
+                │ + getAC() : AC        │
+                └───────────▲───────────┘
+                            │
+                            │ uses
+                            │
+                ┌───────────────────────┐
+                │      ACDirector       │
+                │       <<Director>>    │
+                ├───────────────────────┤
+                │ - acBuilder :         │
+                │   ACBuilder           │
+                ├───────────────────────┤
+                │ + ACDirector(         │
+                │   acBuilder: ACBuilder│
+                │   )                   │
+                │ + build() : void      │
+                └───────────▲───────────┘
+                            │
+                            │ uses
+                            │
+                ┌───────────────────────┐
+                │         Main          │
+                │       <<Client>>      │
+                ├───────────────────────┤
+                │ + main(args:String[]) │
+                │   : void              │
+                └───────────────────────┘
