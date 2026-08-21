@@ -13,7 +13,7 @@ public class Main {
 
         MedicalUnit doc1 = new StaffMember("Dr. Adams");
         doc1.setStartDescription("  Doctor: Dr. Adams ");
-        doc1.setEndDescription("");
+        doc1.setEndDescription("    ");
         doc1.setSpecialty("(General Surgery)");
         surgeryDept.addUnit(doc1);
 
