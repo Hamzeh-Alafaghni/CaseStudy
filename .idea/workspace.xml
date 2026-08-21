@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6ace69d-d95f-407f-8a30-68f2d3d1125b" name="Changes" comment="add the Strategy Pattern , it's about Clinic Payment System">
+    <list default="true" id="e6ace69d-d95f-407f-8a30-68f2d3d1125b" name="Changes" comment="add example in main + add my AI prompt">
+      <change afterPath="$PROJECT_DIR$/README.md " afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CaseStudyStrategy/AI/AI_prompt" beforeDir="false" afterPath="$PROJECT_DIR$/CaseStudyStrategy/AI/AI_prompt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CaseStudyStrategy/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/CaseStudyStrategy/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,23 +50,23 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000006248442668" />
-      <entry key="MS500" value="1.057452375161112" />
-      <entry key="S2" value="1.6429981206054758" />
-      <entry key="S5" value="2.930015136495353" />
-      <entry key="S10" value="4.995943562193122" />
-      <entry key="S30" value="11.86145194315462" />
-      <entry key="S60" value="18.60664076558039" />
-      <entry key="M2" value="30.79477386794152" />
-      <entry key="M5" value="69.65144711392558" />
-      <entry key="M10" value="115.2491858305383" />
-      <entry key="M15" value="141.97766517452945" />
-      <entry key="M30" value="179.29444839541634" />
-      <entry key="H1" value="203.87628660071198" />
-      <entry key="H2" value="218.37843070168833" />
-      <entry key="H4" value="226.37709932028866" />
-      <entry key="D1" value="233.5142140877257" />
-      <entry key="W1" value="234.7864736598952" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0000139584667034" />
+      <entry key="S5" value="1.0114270755142036" />
+      <entry key="S10" value="1.1069182580975199" />
+      <entry key="S30" value="1.585937489369821" />
+      <entry key="S60" value="3.2466096585489037" />
+      <entry key="M2" value="9.786326070238063" />
+      <entry key="M5" value="39.2998412040059" />
+      <entry key="M10" value="90.88390407550702" />
+      <entry key="M15" value="129.97332457551786" />
+      <entry key="M30" value="194.9313512711735" />
+      <entry key="H1" value="243.60546405300258" />
+      <entry key="H2" value="274.0447388809093" />
+      <entry key="H4" value="291.2366367878189" />
+      <entry key="D1" value="306.75336365262996" />
+      <entry key="W1" value="309.53311800456" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -89,23 +88,23 @@
       <entry key="W1" value="0.0" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9592647145756558" />
-      <entry key="MS500" value="1.0486143537375354" />
-      <entry key="S2" value="1.6394505055915192" />
-      <entry key="S5" value="2.9275524504041646" />
-      <entry key="S10" value="4.993893745247364" />
-      <entry key="S30" value="11.859835742175491" />
-      <entry key="S60" value="18.60537199637609" />
-      <entry key="M2" value="30.79373671216355" />
-      <entry key="M5" value="69.65053375414827" />
-      <entry key="M10" value="115.2484385623444" />
-      <entry key="M15" value="141.97705323270694" />
-      <entry key="M30" value="179.2940626822311" />
-      <entry key="H1" value="203.87606727147727" />
-      <entry key="H2" value="218.37831315306227" />
-      <entry key="H4" value="226.37703835428474" />
-      <entry key="D1" value="233.51420359864582" />
-      <entry key="W1" value="234.78647215306697" />
+      <entry key="MS100" value="0.9592641193252643" />
+      <entry key="MS500" value="0.9917167307382933" />
+      <entry key="S2" value="0.9979366436433461" />
+      <entry key="S5" value="1.0105845612032371" />
+      <entry key="S10" value="1.1064505933468871" />
+      <entry key="S30" value="1.585708095774964" />
+      <entry key="S60" value="3.24638959190951" />
+      <entry key="M2" value="9.786019026958517" />
+      <entry key="M5" value="39.29935762852756" />
+      <entry key="M10" value="90.8833395948149" />
+      <entry key="M15" value="129.97278384548616" />
+      <entry key="M30" value="194.93094356401335" />
+      <entry key="H1" value="243.6052084323122" />
+      <entry key="H2" value="274.0445947868643" />
+      <entry key="H4" value="291.2365601199726" />
+      <entry key="D1" value="306.75335017675883" />
+      <entry key="W1" value="309.5331160615306" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -202,6 +201,7 @@
     <MESSAGE value="." />
     <MESSAGE value="Basic files structure for iterator and strategy patterns" />
     <MESSAGE value="add the Strategy Pattern , it's about Clinic Payment System" />
-    <option name="LAST_COMMIT_MESSAGE" value="add the Strategy Pattern , it's about Clinic Payment System" />
+    <MESSAGE value="add example in main + add my AI prompt" />
+    <option name="LAST_COMMIT_MESSAGE" value="add example in main + add my AI prompt" />
   </component>
 </project>
