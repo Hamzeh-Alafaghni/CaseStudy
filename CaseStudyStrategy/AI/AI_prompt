@@ -1,0 +1,165 @@
+                            ------------STRATEGY PATTERN AI PROMPT-------------
+-------------------------------------------------------------------------------------------------------------------------------------
+--------------prompt---------------
+can you explain how the strategy patter work, and give me an example
+
+------------AI Response------------
+Strategy Pattern — super simple
+
+The Strategy Pattern is used when you have different ways to do the same thing.
+
+For example, a delivery app can deliver by:
+
+🚗 Car
+🏍️ Bike
+🚲 Bicycle
+
+Instead of putting everything in one big class, we create separate strategies:
+
+interface DeliveryStrategy {
+    void deliver();
+}
+
+class CarDelivery implements DeliveryStrategy {
+    public void deliver() {
+        System.out.println("Deliver by car");
+    }
+}
+
+class BikeDelivery implements DeliveryStrategy {
+    public void deliver() {
+        System.out.println("Deliver by bike");
+    }
+}
+
+Then we choose which strategy to use:
+
+DeliveryStrategy strategy = new BikeDelivery();
+strategy.deliver();
+
+In short:
+👉 Strategy Pattern = choose between different behaviors without changing the main class.
+
+-----------------------Why this prompt was used?-----------------------
+to help understanding the strategy patter and have a better look on it
+
+----------------How the AI response helped the project?----------------
+just to get the basic knowledge to start writing the code
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+
+--------------prompt---------------
+can you give me a scenario to apply strategy pattern on it ?
+
+------------AI Response------------
+A patient visits a clinic for a medical appointment and, after receiving treatment, needs to pay a 50 JOD bill. The clinic allows the patient to pay either with cash or a credit card. At first, the patient decides to pay with cash, but while at the reception desk, they change their mind and choose to pay with a credit card instead. The payment method can change, but the patient still needs to perform the same action: pay the bill.
+
+-----------------------Why this prompt was used?-----------------------
+I did use it to make things faster and have a real thing to work on it rather than start with nothing to start with
+
+----------------How the AI response helped the project?----------------
+get scenario "problem" to work on it
+-------------------------------------------------------------------------------------------------------------------------------------
+
+
+--------------prompt---------------
+can you write README.md file for this project CaseStudyStrategy.zip and make it short
+
+------------AI Response------------
+# Clinic Payment System - Strategy Pattern
+
+A simple Java application demonstrating the Strategy Design Pattern.
+
+## Overview
+This project models a clinic's reception desk where patients can pay their medical bills. By using the Strategy Pattern, the payment method (Cash or Card) is separated from the `ClinicPatient` class. This makes the code cleaner and allows the system to add new payment types (like Insurance or Apple Pay) in the future without changing the patient code.
+
+## File Structure
+All code is located in a single file for easy reading:
+- `PaymentStrategy` (The interface every payment type must follow)
+- `CashPayment` & `CardPayment` (The specific payment behaviors)
+- `ClinicPatient` (The context class that uses the payment strategy)
+- `Main` (The test class)
+
+## How to Run
+
+1. Save the code into `Main.java`.
+2. Compile via terminal: `javac Main.java`
+3. Run the application: `java Main`
+
+-----------------------Why this prompt was used?-----------------------
+it's just to make th AI write it
+
+----------------How the AI response helped the project?----------------
+write README.md file for this project
+-------------------------------------------------------------------------------------------------------------------------------------
+
+
+--------------prompt---------------
+can you translate this UML diagram from UML.png to text
+
+------------AI Response------------
+       +-----------------------------------------+
+       |             ClinicPatient               |
+       +-----------------------------------------+
+       | - paymentStrategy: PaymentStrategy      |
+       +-----------------------------------------+
+       | + ClinicPatient(PaymentStrategy)        |
+       | + setPaymentStrategy(PaymentStrategy)   |
+       | + payBill(amount: int): void            |
+       +-----------------------------------------+
+                            |
+                            |
+                           < > Aggregation
+                            |
+                            v
+       +-----------------------------------------+
+       |             <<interface>>               |
+       |            PaymentStrategy              |
+       +-----------------------------------------+
+       | + pay(amount: int): void                |
+       +-----------------------------------------+
+                            ^
+                            |
+                            | Implements
+                            |
+             +--------------+--------------+
+             |                             |
+             |                             |
++--------------------------+  +--------------------------+
+|       CashPayment        |  |       CardPayment        |
++--------------------------+  +--------------------------+
+| + pay(amount: int): void |  | + pay(amount: int): void |
++--------------------------+  +--------------------------+
+
+-----------------------Why this prompt was used?-----------------------
+I did draw UML diagram on paper and want to translate it to text
+
+----------------How the AI response helped the project?----------------
+it's easier to push text on GitHub than png
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+
+--------------prompt---------------
+what is the QA of this pattern and how it apply it on the project ? make it short
+------------AI Response------------
+QA Benefits (The "Why")
+⚬	Isolated Testing: QA can test one strategy (e.g., SMS) independently without worrying about breaking others.
+⚬	Easy Mocking: You can inject a fake strategy during testing to verify core logic without triggering real actions (like actually sending an SMS).
+⚬	Fewer Regression Bugs: Because of the Open/Closed Principle, adding a new feature means creating a new class rather than altering old code, heavily reducing the chance of new bugs.
+
+-----------------------Why this prompt was used?-----------------------
+just to understand what the QA and how can strategy pattern apply it on code
+
+----------------How the AI response helped the project?----------------
+to get the basic understanding of strategy pattern
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+//use this to add your AI prompt DO NOT ADD IT OTHER THAN THIS SHAPE delete this when you finish
+--------------prompt---------------
+------------AI Response------------
+-----------------------Why this prompt was used?-----------------------
+----------------How the AI response helped the project?----------------
+-------------------------------------------------------------------------------------------------------------------------------------

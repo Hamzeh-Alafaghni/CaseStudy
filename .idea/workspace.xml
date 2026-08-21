@@ -4,22 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6ace69d-d95f-407f-8a30-68f2d3d1125b" name="Changes" comment="Basic files structure for iterator and strategy patterns">
-      <change afterPath="$PROJECT_DIR$/CaseStudyStrategy/src/CardPayment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CaseStudyStrategy/src/CashPayment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CaseStudyStrategy/src/ClinicPatient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CaseStudyStrategy/src/PaymentStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CaseStudyBuilder/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/CaseStudyBuilder/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CaseStudyBuilder/src/AC.java" beforeDir="false" afterPath="$PROJECT_DIR$/CaseStudyBuilder/src/AC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CaseStudyBuilder/src/ACBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/CaseStudyBuilder/src/ACBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CaseStudyBuilder/src/SplitACBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/CaseStudyBuilder/src/SplitACBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CaseStudyBuilder/src/WindowACBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/CaseStudyBuilder/src/WindowACBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CaseStudyComposite/src/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/CaseStudyComposite/src/Department.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CaseStudyComposite/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/CaseStudyComposite/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CaseStudyComposite/src/MedicalUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/CaseStudyComposite/src/MedicalUnit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CaseStudyIterator/UML_diagram/UML" beforeDir="false" afterPath="$PROJECT_DIR$/CaseStudyIterator/UML_diagram/UML" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CaseStudyStrategy/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/CaseStudyStrategy/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CaseStudyStrategy/UML_diagram/UML" beforeDir="false" afterPath="$PROJECT_DIR$/CaseStudyStrategy/UML_diagram/UML" afterDir="false" />
+    <list default="true" id="e6ace69d-d95f-407f-8a30-68f2d3d1125b" name="Changes" comment="add the Strategy Pattern , it's about Clinic Payment System">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CaseStudyStrategy/AI/AI_prompt" beforeDir="false" afterPath="$PROJECT_DIR$/CaseStudyStrategy/AI/AI_prompt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CaseStudyStrategy/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/CaseStudyStrategy/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,23 +51,23 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.000000460594334" />
-      <entry key="MS500" value="1.0540335769567415" />
-      <entry key="S2" value="1.4821319691259753" />
-      <entry key="S5" value="1.74690679099419" />
-      <entry key="S10" value="1.864487533457614" />
-      <entry key="S30" value="2.015513587334906" />
-      <entry key="S60" value="2.2269447771381445" />
-      <entry key="M2" value="2.488883119268719" />
-      <entry key="M5" value="2.7535933288678587" />
-      <entry key="M10" value="2.8684587008634197" />
-      <entry key="M15" value="2.91033786685605" />
-      <entry key="M30" value="2.954154520032244" />
-      <entry key="H1" value="2.976817782016219" />
-      <entry key="H2" value="2.9883432722873575" />
-      <entry key="H4" value="2.9941551368641477" />
-      <entry key="D1" value="2.9990235565037553" />
-      <entry key="W1" value="2.9998604516486633" />
+      <entry key="MS100" value="1.0000006248442668" />
+      <entry key="MS500" value="1.057452375161112" />
+      <entry key="S2" value="1.6429981206054758" />
+      <entry key="S5" value="2.930015136495353" />
+      <entry key="S10" value="4.995943562193122" />
+      <entry key="S30" value="11.86145194315462" />
+      <entry key="S60" value="18.60664076558039" />
+      <entry key="M2" value="30.79477386794152" />
+      <entry key="M5" value="69.65144711392558" />
+      <entry key="M10" value="115.2491858305383" />
+      <entry key="M15" value="141.97766517452945" />
+      <entry key="M30" value="179.29444839541634" />
+      <entry key="H1" value="203.87628660071198" />
+      <entry key="H2" value="218.37843070168833" />
+      <entry key="H4" value="226.37709932028866" />
+      <entry key="D1" value="233.5142140877257" />
+      <entry key="W1" value="234.7864736598952" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -102,23 +89,23 @@
       <entry key="W1" value="0.0" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9526384429487377" />
-      <entry key="MS500" value="1.0440032117103841" />
-      <entry key="S2" value="1.4788741468153301" />
-      <entry key="S5" value="1.7454193186475455" />
-      <entry key="S10" value="1.8637028222404268" />
-      <entry key="S30" value="2.0152287359499024" />
-      <entry key="S60" value="2.226781447863466" />
-      <entry key="M2" value="2.48878811212982" />
-      <entry key="M5" value="2.753549887969154" />
-      <entry key="M10" value="2.8684357972471113" />
-      <entry key="M15" value="2.9103223099659346" />
-      <entry key="M30" value="2.9541465909666047" />
-      <entry key="H1" value="2.976813778520144" />
-      <entry key="H2" value="2.988341260630551" />
-      <entry key="H4" value="2.9941541285372746" />
-      <entry key="D1" value="2.9990233881004467" />
-      <entry key="W1" value="2.999860427582482" />
+      <entry key="MS100" value="0.9592647145756558" />
+      <entry key="MS500" value="1.0486143537375354" />
+      <entry key="S2" value="1.6394505055915192" />
+      <entry key="S5" value="2.9275524504041646" />
+      <entry key="S10" value="4.993893745247364" />
+      <entry key="S30" value="11.859835742175491" />
+      <entry key="S60" value="18.60537199637609" />
+      <entry key="M2" value="30.79373671216355" />
+      <entry key="M5" value="69.65053375414827" />
+      <entry key="M10" value="115.2484385623444" />
+      <entry key="M15" value="141.97705323270694" />
+      <entry key="M30" value="179.2940626822311" />
+      <entry key="H1" value="203.87606727147727" />
+      <entry key="H2" value="218.37831315306227" />
+      <entry key="H4" value="226.37703835428474" />
+      <entry key="D1" value="233.51420359864582" />
+      <entry key="W1" value="234.78647215306697" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -214,6 +201,7 @@
     <MESSAGE value="Fix the main" />
     <MESSAGE value="." />
     <MESSAGE value="Basic files structure for iterator and strategy patterns" />
-    <option name="LAST_COMMIT_MESSAGE" value="Basic files structure for iterator and strategy patterns" />
+    <MESSAGE value="add the Strategy Pattern , it's about Clinic Payment System" />
+    <option name="LAST_COMMIT_MESSAGE" value="add the Strategy Pattern , it's about Clinic Payment System" />
   </component>
 </project>
