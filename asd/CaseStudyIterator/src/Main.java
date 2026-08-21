@@ -14,4 +14,5 @@ public class Main {
             Song currentSong = iterator.next();
             System.out.println("Now Playing: " + currentSong.getTitle());
     }
+
 }

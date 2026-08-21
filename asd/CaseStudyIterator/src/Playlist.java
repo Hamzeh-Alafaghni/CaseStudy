@@ -12,4 +12,5 @@ class Playlist {
     public Song[] getSongs() {
         return songs;
     }
+
 }
