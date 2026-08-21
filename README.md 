@@ -1,46 +1,52 @@
-# Zarqa University: Software Design Patterns Project
+Zarqa University — Software Design Patterns Project
 
-[Language: Java]
-[Course: Design Patterns]
+Language: Java
+Course: Design Patterns
 
-## 📖 Project Overview
+📖 Project Overview
+
 This repository contains the practical implementation of various GoF (Gang of Four) Software Design Patterns. The project demonstrates the application of object-oriented design principles to solve common architectural problems, ensuring the codebase remains scalable, maintainable, and loosely coupled.
 
 Each module within this project isolates a specific design pattern applied to a real-world scenario.
 
----
+🧩 Implemented Patterns & Modules
+1. ❄️ AC System — Builder Design Pattern
 
-## Implemented Patterns & Modules
+Objective: Simplify the creation of complex objects.
 
-### 1. AC System (Builder Design Pattern)
-**Objective:** Simplify the creation of complex objects.
-*   **Description:** This module models an Air Conditioning configuration system. By utilizing the Builder pattern, it allows for the step-by-step construction of complex AC units (e.g., setting cooling capacity, energy efficiency, and smart features) without cluttering the constructor, keeping the instantiation process clean and readable.
+Description:
+This module models an Air Conditioning configuration system. By utilizing the Builder pattern, it allows for the step-by-step construction of complex AC units (e.g., setting cooling capacity, energy efficiency, and smart features) without cluttering the constructor, keeping the instantiation process clean and readable.
 
-### 2. Hospital Management System (Composite Design Pattern)
-**Objective:** Treat individual objects and compositions of objects uniformly.
-*   **Description:** This module represents the organizational structure of a hospital. The Composite pattern is used to manage hierarchical data, allowing the system to seamlessly perform operations across individual entities (like single doctors or rooms) and complex branches (like entire medical departments or wards) using the same interface.
+2. 🏥 Hospital Management System — Composite Design Pattern
 
-### 3. Collection Traversal (Iterator Design Pattern)
-**Objective:** Provide a way to access elements sequentially without exposing underlying representation.
-*   **Description:** This module implements the Iterator pattern to traverse custom data collections. It extracts the navigation behavior from the main collection classes, providing a standard interface to loop through items safely and cleanly.
+Objective: Treat individual objects and compositions of objects uniformly.
 
-### 4. Clinic Payment System (Strategy Design Pattern)
-**Objective:** Encapsulate interchangeable behaviors and switch them at runtime.
-*   **Description:** This module handles billing at a clinic reception. It utilizes the Strategy pattern to allow patients to dynamically switch between different payment algorithms (e.g., Cash, Credit Card, or Insurance) at runtime without altering the core payment processing logic.
+Description:
+This module represents the organizational structure of a hospital. The Composite pattern is used to manage hierarchical data, allowing the system to seamlessly perform operations across individual entities (like single doctors or rooms) and complex branches (like entire medical departments or wards) using the same interface.
 
----
+3. IDK yet — Iterator Design Pattern
 
-## Project Team
+Objective: Provide a way to access elements sequentially without exposing underlying representation.
+
+Description:
+This module implements the Iterator pattern to traverse custom data collections. It extracts the navigation behavior from the main collection classes, providing a standard interface to loop through items safely and cleanly.
+
+4. 💳 Clinic Payment System — Strategy Design Pattern
+
+Objective: Encapsulate interchangeable behaviors and switch them at runtime.
+
+Description:
+This module handles billing at a clinic reception. It utilizes the Strategy pattern to allow patients to dynamically switch between different payment algorithms (e.g., Cash, Credit Card, or Insurance) at runtime without altering the core payment processing logic.
+
+👥 Project Team
 
 This project was collaboratively developed by the following students:
 
-| Name | Student ID |
-| **Hamzeh Waleed Al-Afghani** | 202304248 |
-| **Mohammad Aref Fathi Al-Halabi** | 202403181 |
-| **Ahmad Bilal Abu-Rub** | 202305198 |
+Name	Student ID
+Hamzeh Waleed Al-Afghani	202304248
+Mohammad Aref Fathi Al-Halabi	202403181
+Ahmad Bilal Abu-Rub	202305198
+👨‍🏫 Instructor
 
----
-
-##  Instructor
-**Dr. Issam Jebreen**  
-*Faculty of Information Technology | Zarqa University*
+Dr. Issam Jebreen
+Faculty of Information Technology | Zarqa University
