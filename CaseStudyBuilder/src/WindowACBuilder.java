@@ -1,4 +1,4 @@
-public class WindowACBuilder implements ACBuilder{
+public class WindowACBuilder implements ACBuilder {
 
     private final AC ac = new AC("WINDOW AC");
 

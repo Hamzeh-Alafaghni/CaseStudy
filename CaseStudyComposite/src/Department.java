@@ -48,7 +48,7 @@ class Department extends MedicalUnit {
     @Override
     public void printDetails() {
         System.out.println(startDescription);
-        for(MedicalUnit unit : childrenUnits) {
+        for (MedicalUnit unit : childrenUnits) {
             unit.printDetails();
         }
         System.out.println(endDescription);

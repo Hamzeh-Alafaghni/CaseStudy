@@ -11,23 +11,53 @@ public class AC {
         this.acType = acType;
     }
 
-    public String getCapacity() { return capacity; }
-    public void setCapacity(String capacity) { this.capacity = capacity; }
+    public String getCapacity() {
+        return capacity;
+    }
 
-    public String getCompressorType() { return compressorType; }
-    public void setCompressorType(String compressorType) { this.compressorType = compressorType; }
+    public void setCapacity(String capacity) {
+        this.capacity = capacity;
+    }
 
-    public String getRefrigerant() { return refrigerant; }
-    public void setRefrigerant(String refrigerant) { this.refrigerant = refrigerant; }
+    public String getCompressorType() {
+        return compressorType;
+    }
 
-    public String getFilterType() { return filterType; }
-    public void setFilterType(String filterType) { this.filterType = filterType; }
+    public void setCompressorType(String compressorType) {
+        this.compressorType = compressorType;
+    }
 
-    public String getDisplayType() { return displayType; }
-    public void setDisplayType(String displayType) { this.displayType = displayType; }
+    public String getRefrigerant() {
+        return refrigerant;
+    }
 
-    public String getSmartFeatures() { return smartFeatures; }
-    public void setSmartFeatures(String smartFeatures) { this.smartFeatures = smartFeatures; }
+    public void setRefrigerant(String refrigerant) {
+        this.refrigerant = refrigerant;
+    }
+
+    public String getFilterType() {
+        return filterType;
+    }
+
+    public void setFilterType(String filterType) {
+        this.filterType = filterType;
+    }
+
+    public String getDisplayType() {
+        return displayType;
+    }
+
+    public void setDisplayType(String displayType) {
+        this.displayType = displayType;
+    }
+
+    public String getSmartFeatures() {
+        return smartFeatures;
+    }
+
+    public void setSmartFeatures(String smartFeatures) {
+        this.smartFeatures = smartFeatures;
+    }
 
     @Override
     public String toString() {

@@ -1,5 +1,5 @@
 public class Main {
-    static void main(String[] args){
+    static void main(String[] args) {
 
         MedicalUnit mainHospital = new Department("General Hospital");
         mainHospital.setStartDescription("General Hospital Master Division");
