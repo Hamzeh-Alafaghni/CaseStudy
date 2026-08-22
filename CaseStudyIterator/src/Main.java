@@ -3,7 +3,7 @@ public class Main {
 
         Playlist myPlaylist = new Playlist();
         myPlaylist.addSong("Song 1: Shape of You");
-        myPlaylist.addSong("Song 2: Blinding Lights");
+        myPlaylist.addSong("Song 2: Базовый минимум");
         myPlaylist.addSong("Song 3: Levitating");
 
         PlaylistIterator iterator = new PlaylistIterator(myPlaylist.getSongs());
